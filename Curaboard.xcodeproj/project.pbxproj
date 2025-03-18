@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0B8FB932D89990B00A234C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B8FB8D2D89990B00A234C3 /* Preview Assets.xcassets */; };
+		D0B8FB942D89990B00A234C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B8FB8F2D89990B00A234C3 /* Assets.xcassets */; };
+		D0B8FB952D89990B00A234C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8FB902D89990B00A234C3 /* ContentView.swift */; };
+		D0B8FB962D89990B00A234C3 /* CuraboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8FB912D89990B00A234C3 /* CuraboardApp.swift */; };
+		D0B8FB992D89991100A234C3 /* CuraboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8FB972D89991100A234C3 /* CuraboardTests.swift */; };
+		D0B8FB9D2D89991700A234C3 /* CuraboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8FB9A2D89991700A234C3 /* CuraboardUITests.swift */; };
+		D0B8FB9E2D89991700A234C3 /* CuraboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8FB9B2D89991700A234C3 /* CuraboardUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D0B8FB712D89990200A234C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,25 +37,14 @@
 		D0B8FB602D89990000A234C3 /* Curaboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curaboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B8FB702D89990200A234C3 /* CuraboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuraboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B8FB7A2D89990200A234C3 /* CuraboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuraboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B8FB8D2D89990B00A234C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0B8FB8F2D89990B00A234C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0B8FB902D89990B00A234C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0B8FB912D89990B00A234C3 /* CuraboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuraboardApp.swift; sourceTree = "<group>"; };
+		D0B8FB972D89991100A234C3 /* CuraboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuraboardTests.swift; sourceTree = "<group>"; };
+		D0B8FB9A2D89991700A234C3 /* CuraboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuraboardUITests.swift; sourceTree = "<group>"; };
+		D0B8FB9B2D89991700A234C3 /* CuraboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuraboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D0B8FB622D89990000A234C3 /* Curaboard */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Curaboard;
-			sourceTree = "<group>";
-		};
-		D0B8FB732D89990200A234C3 /* CuraboardTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CuraboardTests;
-			sourceTree = "<group>";
-		};
-		D0B8FB7D2D89990200A234C3 /* CuraboardUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CuraboardUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D0B8FB5D2D89990000A234C3 /* Frameworks */ = {
@@ -75,9 +74,9 @@
 		D0B8FB572D89990000A234C3 = {
 			isa = PBXGroup;
 			children = (
-				D0B8FB622D89990000A234C3 /* Curaboard */,
-				D0B8FB732D89990200A234C3 /* CuraboardTests */,
-				D0B8FB7D2D89990200A234C3 /* CuraboardUITests */,
+				D0B8FB922D89990B00A234C3 /* Curaboard */,
+				D0B8FB982D89991100A234C3 /* CuraboardTests */,
+				D0B8FB9C2D89991700A234C3 /* CuraboardUITests */,
 				D0B8FB612D89990000A234C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +89,42 @@
 				D0B8FB7A2D89990200A234C3 /* CuraboardUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0B8FB8E2D89990B00A234C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D0B8FB8D2D89990B00A234C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0B8FB922D89990B00A234C3 /* Curaboard */ = {
+			isa = PBXGroup;
+			children = (
+				D0B8FB8E2D89990B00A234C3 /* Preview Content */,
+				D0B8FB8F2D89990B00A234C3 /* Assets.xcassets */,
+				D0B8FB902D89990B00A234C3 /* ContentView.swift */,
+				D0B8FB912D89990B00A234C3 /* CuraboardApp.swift */,
+			);
+			path = Curaboard;
+			sourceTree = "<group>";
+		};
+		D0B8FB982D89991100A234C3 /* CuraboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0B8FB972D89991100A234C3 /* CuraboardTests.swift */,
+			);
+			path = CuraboardTests;
+			sourceTree = "<group>";
+		};
+		D0B8FB9C2D89991700A234C3 /* CuraboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0B8FB9A2D89991700A234C3 /* CuraboardUITests.swift */,
+				D0B8FB9B2D89991700A234C3 /* CuraboardUITestsLaunchTests.swift */,
+			);
+			path = CuraboardUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +141,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D0B8FB622D89990000A234C3 /* Curaboard */,
 			);
 			name = Curaboard;
 			packageProductDependencies = (
@@ -130,9 +162,6 @@
 			dependencies = (
 				D0B8FB722D89990200A234C3 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D0B8FB732D89990200A234C3 /* CuraboardTests */,
-			);
 			name = CuraboardTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +181,6 @@
 			);
 			dependencies = (
 				D0B8FB7C2D89990200A234C3 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D0B8FB7D2D89990200A234C3 /* CuraboardUITests */,
 			);
 			name = CuraboardUITests;
 			packageProductDependencies = (
@@ -212,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B8FB932D89990B00A234C3 /* Preview Assets.xcassets in Resources */,
+				D0B8FB942D89990B00A234C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B8FB952D89990B00A234C3 /* ContentView.swift in Sources */,
+				D0B8FB962D89990B00A234C3 /* CuraboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B8FB992D89991100A234C3 /* CuraboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B8FB9D2D89991700A234C3 /* CuraboardUITests.swift in Sources */,
+				D0B8FB9E2D89991700A234C3 /* CuraboardUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
