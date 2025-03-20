@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D064D3A62D8B521F00E9D6F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D3A52D8B521F00E9D6F9 /* LoginView.swift */; };
+		D064D3AC2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D3AB2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift */; };
+		D064D3AF2D8C866F00E9D6F9 /* RecentlySavedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D3AE2D8C866F00E9D6F9 /* RecentlySavedItem.swift */; };
 		D0B8FB932D89990B00A234C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B8FB8D2D89990B00A234C3 /* Preview Assets.xcassets */; };
 		D0B8FB942D89990B00A234C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B8FB8F2D89990B00A234C3 /* Assets.xcassets */; };
 		D0B8FB952D89990B00A234C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8FB902D89990B00A234C3 /* ContentView.swift */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		D064D3A52D8B521F00E9D6F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D064D3AB2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlySavedItemsView.swift; sourceTree = "<group>"; };
+		D064D3AE2D8C866F00E9D6F9 /* RecentlySavedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlySavedItem.swift; sourceTree = "<group>"; };
 		D0B8FB602D89990000A234C3 /* Curaboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curaboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B8FB702D89990200A234C3 /* CuraboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuraboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B8FB7A2D89990200A234C3 /* CuraboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuraboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,8 +82,17 @@
 			children = (
 				D0B8FB902D89990B00A234C3 /* ContentView.swift */,
 				D064D3A52D8B521F00E9D6F9 /* LoginView.swift */,
+				D064D3AB2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D064D3AD2D8C866800E9D6F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D064D3AE2D8C866F00E9D6F9 /* RecentlySavedItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D0B8FB572D89990000A234C3 = {
@@ -113,6 +126,7 @@
 		D0B8FB922D89990B00A234C3 /* Curaboard */ = {
 			isa = PBXGroup;
 			children = (
+				D064D3AD2D8C866800E9D6F9 /* Models */,
 				D0B8FB8E2D89990B00A234C3 /* Preview Content */,
 				D0B8FB8F2D89990B00A234C3 /* Assets.xcassets */,
 				D064D3A42D8B51ED00E9D6F9 /* Views */,
@@ -277,6 +291,8 @@
 			files = (
 				D064D3A62D8B521F00E9D6F9 /* LoginView.swift in Sources */,
 				D0B8FB952D89990B00A234C3 /* ContentView.swift in Sources */,
+				D064D3AF2D8C866F00E9D6F9 /* RecentlySavedItem.swift in Sources */,
+				D064D3AC2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift in Sources */,
 				D0B8FB962D89990B00A234C3 /* CuraboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
