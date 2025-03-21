@@ -11,7 +11,7 @@ struct ContentView: View {
     let safariURL = URL(string: "https://www.curaboard.com/smallwolf438")!
 
     @State private var videoPlayer: AVPlayer = {
-        guard let url = Bundle.main.url(forResource: "video", withExtension: "mp4") else {
+        guard let url = Bundle.main.url(forResource: "video1", withExtension: "mp4") else {
             fatalError("Failed to find video.mp4 in the app bundle.")
         }
         return AVPlayer(url: url)

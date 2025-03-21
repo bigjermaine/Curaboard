@@ -6,8 +6,15 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct LoginView: View {
+    @State private var videoPlayer: AVPlayer = {
+        guard let url = Bundle.main.url(forResource: "video", withExtension: "mp4") else {
+            fatalError("Failed to find video.mp4 in the app bundle.")
+        }
+        return AVPlayer(url: url)
+    }()
     var body: some View {
         VStack {
             ScrollView {
@@ -20,10 +27,12 @@ struct LoginView: View {
                         .font(.system(size: 16, weight: .regular))
                         .foregroundStyle(.color1D1B20)
                         .multilineTextAlignment(.center)
-                    Image("Frame1")
-                        .resizable()
-                        .frame(maxWidth: 382, maxHeight: 182)
-                        .aspectRatio(contentMode: .fill)
+                    VideoPlayerView(player: videoPlayer)
+                        .frame(height: 182)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(12)
+                        .shadow(radius: 5)
+                        .padding()
                     Text("Here are some of our favorite stores to use curaboard with")
                         .foregroundStyle(.color1D1B20)
                         .font(.system(size: 16, weight: .regular))
