@@ -8,8 +8,8 @@ import SwiftUI
 import AVKit
 
 struct ContentView: View {
-    let safariURL = URL(string: "https://www.curaboard.com/smallwolf438")!
-
+    let safariURL = URL(string: "https://www.curaboard.com")!
+    let seeStores = URL(string: "https://www.curaboard.com/stores?defaultTab=Extension")!
     @State private var videoPlayer: AVPlayer = {
         guard let url = Bundle.main.url(forResource: "video1", withExtension: "mp4") else {
             fatalError("Failed to find video.mp4 in the app bundle.")
@@ -75,7 +75,6 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            
             VStack(spacing: 16) {
                 Button {
                     openURLInSafari()
@@ -90,7 +89,7 @@ struct ContentView: View {
                 }
                 
                 Button {
-                    // Handle button action
+                    openSeeStoresInSafari()
                 } label: {
                     Text("See Supported Stores")
                         .foregroundStyle(.blue)
@@ -98,7 +97,7 @@ struct ContentView: View {
                         .font(.system(size: 14, weight: .regular))
                 }
             }
-            .padding(.bottom, 20)
+            .padding(.bottom, 40)
         }
     }
     
@@ -107,6 +106,14 @@ struct ContentView: View {
             UIApplication.shared.open(safariURL)
         } else {
             print("Failed to open URL: \(safariURL)")
+        }
+    }
+    
+    private func openSeeStoresInSafari() {
+        if UIApplication.shared.canOpenURL(seeStores) {
+            UIApplication.shared.open(seeStores)
+        } else {
+            print("Failed to open URL: \(seeStores)")
         }
     }
 }
