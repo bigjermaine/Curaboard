@@ -10,6 +10,9 @@
 		D064D3A62D8B521F00E9D6F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D3A52D8B521F00E9D6F9 /* LoginView.swift */; };
 		D064D3AC2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D3AB2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift */; };
 		D064D3AF2D8C866F00E9D6F9 /* RecentlySavedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D3AE2D8C866F00E9D6F9 /* RecentlySavedItem.swift */; };
+		D064D44D2D8D29C700E9D6F9 /* Testing Safari Extension1.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D064D4352D8D29C700E9D6F9 /* Testing Safari Extension1.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D064D4812D8D93B600E9D6F9 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D4802D8D93B600E9D6F9 /* VideoPlayerView.swift */; };
+		D064D4982D8DD5A500E9D6F9 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D064D4972D8DD5A500E9D6F9 /* video.mp4 */; };
 		D0B8FB932D89990B00A234C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B8FB8D2D89990B00A234C3 /* Preview Assets.xcassets */; };
 		D0B8FB942D89990B00A234C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B8FB8F2D89990B00A234C3 /* Assets.xcassets */; };
 		D0B8FB952D89990B00A234C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8FB902D89990B00A234C3 /* ContentView.swift */; };
@@ -20,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D064D44B2D8D29C700E9D6F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B8FB582D89990000A234C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D064D4342D8D29C700E9D6F9;
+			remoteInfo = "Testing Safari Extension1";
+		};
 		D0B8FB712D89990200A234C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0B8FB582D89990000A234C3 /* Project object */;
@@ -36,10 +46,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D064D3D12D8D197600E9D6F9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D064D44D2D8D29C700E9D6F9 /* Testing Safari Extension1.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D064D3A52D8B521F00E9D6F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D064D3AB2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlySavedItemsView.swift; sourceTree = "<group>"; };
 		D064D3AE2D8C866F00E9D6F9 /* RecentlySavedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlySavedItem.swift; sourceTree = "<group>"; };
+		D064D4352D8D29C700E9D6F9 /* Testing Safari Extension1.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Testing Safari Extension1.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D064D47E2D8D8A1C00E9D6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D064D4802D8D93B600E9D6F9 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		D064D4972D8DD5A500E9D6F9 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		D0B8FB602D89990000A234C3 /* Curaboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curaboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B8FB702D89990200A234C3 /* CuraboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuraboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B8FB7A2D89990200A234C3 /* CuraboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuraboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +80,39 @@
 		D0B8FB9B2D89991700A234C3 /* CuraboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuraboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D064D44E2D8D29C700E9D6F9 /* Exceptions for "Testing Safari Extension1" folder in "Testing Safari Extension1" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D064D4342D8D29C700E9D6F9 /* Testing Safari Extension1 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D064D4362D8D29C700E9D6F9 /* Testing Safari Extension1 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D064D44E2D8D29C700E9D6F9 /* Exceptions for "Testing Safari Extension1" folder in "Testing Safari Extension1" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "Testing Safari Extension1";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		D064D4322D8D29C700E9D6F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0B8FB5D2D89990000A234C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,8 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				D0B8FB902D89990B00A234C3 /* ContentView.swift */,
-				D064D3A52D8B521F00E9D6F9 /* LoginView.swift */,
 				D064D3AB2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift */,
+				D064D3A52D8B521F00E9D6F9 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,12 +155,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D064D47F2D8D93AF00E9D6F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D064D4972D8DD5A500E9D6F9 /* video.mp4 */,
+				D064D4802D8D93B600E9D6F9 /* VideoPlayerView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D0B8FB572D89990000A234C3 = {
 			isa = PBXGroup;
 			children = (
 				D0B8FB922D89990B00A234C3 /* Curaboard */,
 				D0B8FB982D89991100A234C3 /* CuraboardTests */,
 				D0B8FB9C2D89991700A234C3 /* CuraboardUITests */,
+				D064D4362D8D29C700E9D6F9 /* Testing Safari Extension1 */,
 				D0B8FB612D89990000A234C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +181,7 @@
 				D0B8FB602D89990000A234C3 /* Curaboard.app */,
 				D0B8FB702D89990200A234C3 /* CuraboardTests.xctest */,
 				D0B8FB7A2D89990200A234C3 /* CuraboardUITests.xctest */,
+				D064D4352D8D29C700E9D6F9 /* Testing Safari Extension1.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +197,8 @@
 		D0B8FB922D89990B00A234C3 /* Curaboard */ = {
 			isa = PBXGroup;
 			children = (
+				D064D47F2D8D93AF00E9D6F9 /* Extension */,
+				D064D47E2D8D8A1C00E9D6F9 /* Info.plist */,
 				D064D3AD2D8C866800E9D6F9 /* Models */,
 				D0B8FB8E2D89990B00A234C3 /* Preview Content */,
 				D0B8FB8F2D89990B00A234C3 /* Assets.xcassets */,
@@ -155,6 +228,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D064D4342D8D29C700E9D6F9 /* Testing Safari Extension1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D064D44F2D8D29C700E9D6F9 /* Build configuration list for PBXNativeTarget "Testing Safari Extension1" */;
+			buildPhases = (
+				D064D4312D8D29C700E9D6F9 /* Sources */,
+				D064D4322D8D29C700E9D6F9 /* Frameworks */,
+				D064D4332D8D29C700E9D6F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D064D4362D8D29C700E9D6F9 /* Testing Safari Extension1 */,
+			);
+			name = "Testing Safari Extension1";
+			packageProductDependencies = (
+			);
+			productName = "Testing Safari Extension1";
+			productReference = D064D4352D8D29C700E9D6F9 /* Testing Safari Extension1.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D0B8FB5F2D89990000A234C3 /* Curaboard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0B8FB842D89990200A234C3 /* Build configuration list for PBXNativeTarget "Curaboard" */;
@@ -162,10 +257,12 @@
 				D0B8FB5C2D89990000A234C3 /* Sources */,
 				D0B8FB5D2D89990000A234C3 /* Frameworks */,
 				D0B8FB5E2D89990000A234C3 /* Resources */,
+				D064D3D12D8D197600E9D6F9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D064D44C2D8D29C700E9D6F9 /* PBXTargetDependency */,
 			);
 			name = Curaboard;
 			packageProductDependencies = (
@@ -224,6 +321,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					D064D4342D8D29C700E9D6F9 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					D0B8FB5F2D89990000A234C3 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -254,15 +354,24 @@
 				D0B8FB5F2D89990000A234C3 /* Curaboard */,
 				D0B8FB6F2D89990200A234C3 /* CuraboardTests */,
 				D0B8FB792D89990200A234C3 /* CuraboardUITests */,
+				D064D4342D8D29C700E9D6F9 /* Testing Safari Extension1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D064D4332D8D29C700E9D6F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0B8FB5E2D89990000A234C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D064D4982D8DD5A500E9D6F9 /* video.mp4 in Resources */,
 				D0B8FB932D89990B00A234C3 /* Preview Assets.xcassets in Resources */,
 				D0B8FB942D89990B00A234C3 /* Assets.xcassets in Resources */,
 			);
@@ -285,6 +394,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D064D4312D8D29C700E9D6F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0B8FB5C2D89990000A234C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +410,7 @@
 				D064D3AF2D8C866F00E9D6F9 /* RecentlySavedItem.swift in Sources */,
 				D064D3AC2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift in Sources */,
 				D0B8FB962D89990B00A234C3 /* CuraboardApp.swift in Sources */,
+				D064D4812D8D93B600E9D6F9 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +434,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D064D44C2D8D29C700E9D6F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D064D4342D8D29C700E9D6F9 /* Testing Safari Extension1 */;
+			targetProxy = D064D44B2D8D29C700E9D6F9 /* PBXContainerItemProxy */;
+		};
 		D0B8FB722D89990200A234C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D0B8FB5F2D89990000A234C3 /* Curaboard */;
@@ -330,6 +452,68 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D064D4502D8D29C700E9D6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6763NYT2Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Testing Safari Extension1/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Testing Safari Extension1";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XcodeFix.com.Curaboard.Testing-Safari-Extension1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D064D4512D8D29C700E9D6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6763NYT2Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Testing Safari Extension1/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Testing Safari Extension1";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XcodeFix.com.Curaboard.Testing-Safari-Extension1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D0B8FB822D89990200A234C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -454,17 +638,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Curaboard/Preview Content\"";
+				DEVELOPMENT_TEAM = A6763NYT2Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Curaboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +659,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.Curaboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,17 +671,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Curaboard/Preview Content\"";
+				DEVELOPMENT_TEAM = A6763NYT2Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Curaboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,6 +692,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.Curaboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -511,13 +703,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6763NYT2Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.CuraboardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -529,13 +724,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6763NYT2Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.CuraboardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -546,12 +744,15 @@
 		D0B8FB8B2D89990200A234C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6763NYT2Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.CuraboardUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -562,12 +763,15 @@
 		D0B8FB8C2D89990200A234C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6763NYT2Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.CuraboardUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,6 +782,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D064D44F2D8D29C700E9D6F9 /* Build configuration list for PBXNativeTarget "Testing Safari Extension1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D064D4502D8D29C700E9D6F9 /* Debug */,
+				D064D4512D8D29C700E9D6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D0B8FB5B2D89990000A234C3 /* Build configuration list for PBXProject "Curaboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

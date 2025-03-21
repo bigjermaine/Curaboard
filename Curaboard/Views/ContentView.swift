@@ -4,80 +4,81 @@
 //
 //  Created by Daniel Jermaine on 18/03/2025.
 //
-
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
+    let safariURL = URL(string: "https://www.curaboard.com/smallwolf438")!
+
+    @State private var videoPlayer: AVPlayer = {
+        guard let url = Bundle.main.url(forResource: "video", withExtension: "mp4") else {
+            fatalError("Failed to find video.mp4 in the app bundle.")
+        }
+        return AVPlayer(url: url)
+    }()
     var body: some View {
         VStack {
-            // Scrollable content
             ScrollView {
                 VStack {
                     Image("curaBoardIcon")
                         .resizable()
                         .frame(width: 64, height: 64)
+                    
                     Text("Enable the Curaboard extension in Safari")
                         .foregroundStyle(.black)
                         .font(.system(size: 24, weight: .bold))
                         .multilineTextAlignment(.center)
                     
-                    Image("Frame1")
-                        .resizable()
-                        .frame(maxWidth: 382, maxHeight: 182)
-                        .aspectRatio(contentMode: .fill)
+                    // Video Player with PiP
+                    VideoPlayerView(player: videoPlayer)
+                        .frame(height: 182)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(12)
+                        .shadow(radius: 5)
+                        .padding()
                     
                     VStack(alignment: .leading, spacing: 13) {
                         HStack {
                             Image("devicon_safari")
-                                .font(.system(size: 16, weight: .regular))
-                            Text("Open")
-                            
-                            + Text(" ") + Text("Safari")
-                                .font(.system(size: 16, weight: .bold))
+                            Text("Open Safari").bold()
                         }
-                        .foregroundStyle(.color575757)
+                        .foregroundStyle(.gray)
                         
                         HStack {
                             Image("mdi_extension-outline")
-                                .font(.system(size: 16, weight: .regular))
-                            Text("Tap on")
-                            
-                            + Text(" ") + Text("Extensions")
-                                .font(.system(size: 16, weight: .bold))
+                            Text("Tap on Extensions")
+                                .bold()
                         }
-                        .foregroundStyle(.color575757)
+                        .foregroundStyle(.gray)
                         
                         HStack {
                             Image("ion_toggle")
                                 .resizable()
                                 .frame(width: 20, height: 20)
-                            Text("Enable the")
-                            
-                            + Text(" ") + Text("Curaboard extension")
-                                .font(.system(size: 16, weight: .bold))
+                            Text("Enable the Curaboard extension")
+                                .bold()
                         }
-                        .foregroundStyle(.color575757)
+                        .foregroundStyle(.gray)
                         
                         HStack {
                             Image("curaBoardIcon")
                                 .resizable()
                                 .frame(width: 20, height: 20)
                             Text("Save items with ease!")
-                                .font(.system(size: 16, weight: .bold))
+                                .bold()
                         }
-                        .foregroundStyle(.color575757)
+                        .foregroundStyle(.gray)
                     }
                     .frame(maxWidth: .infinity, alignment: .center)
                     
-                    Spacer() // Pushes the buttons to the bottom
+                    Spacer()
                 }
                 .padding()
             }
             
-            // Buttons at the bottom
             VStack(spacing: 16) {
                 Button {
-                    // Handle button action
+                    openURLInSafari()
                 } label: {
                     Text("Enable Curaboard")
                         .font(.system(size: 14, weight: .bold))
@@ -92,15 +93,24 @@ struct ContentView: View {
                     // Handle button action
                 } label: {
                     Text("See Supported Stores")
-                        .foregroundStyle(.color2D79EC)
+                        .foregroundStyle(.blue)
                         .underline()
                         .font(.system(size: 14, weight: .regular))
                 }
             }
-            .padding(.bottom, 20) // Add bottom padding for better spacing
+            .padding(.bottom, 20)
+        }
+    }
+    
+    private func openURLInSafari() {
+        if UIApplication.shared.canOpenURL(safariURL) {
+            UIApplication.shared.open(safariURL)
+        } else {
+            print("Failed to open URL: \(safariURL)")
         }
     }
 }
+
 
 #Preview {
     ContentView()

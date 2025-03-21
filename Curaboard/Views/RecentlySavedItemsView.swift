@@ -35,11 +35,11 @@ struct RecentlySavedItemsView: View {
                                         .padding()
                                     HStack {
                                         Text("You haven’t saved anything yet,")
-                                            .foregroundStyle(.color575757)
+                                            .foregroundColor(.color575757)
                                             .font(.system(size: 14,weight: .regular))
                                         +
                                         Text("start by exploring stores")
-                                            .foregroundStyle(.colorFF004C)
+                                            .foregroundColor(.colorFF004C)
                                             .font(.system(size: 14,weight: .bold))
                                             .underline()
                                         
