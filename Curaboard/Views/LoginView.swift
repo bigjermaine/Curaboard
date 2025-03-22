@@ -15,6 +15,7 @@ struct LoginView: View {
         }
         return AVPlayer(url: url)
     }()
+    @StateObject private var linkViewModel = LinkViewModel()
     var body: some View {
         VStack {
             ScrollView {
@@ -100,7 +101,7 @@ extension LoginView {
             
             HStack{
                 Button{
-                    
+                    linkViewModel.openStoreLink(for: .eleve)
                 }label: {
                     Image("ELEVE")
                         .resizable()
@@ -109,7 +110,7 @@ extension LoginView {
                         .clipped()
                 }
                 Button{
-                    
+                    linkViewModel.openStoreLink(for: .chieftain)
                 }label: {
                     Image("CHIEFTAIN")
                         .resizable()
@@ -118,7 +119,7 @@ extension LoginView {
                         .clipped()
                 }
                 Button{
-                    
+                    linkViewModel.openStoreLink(for: .osami)
                 }label: {
                     Image("Osami")
                         .resizable()
@@ -128,7 +129,7 @@ extension LoginView {
                 }
             }
             Button{
-                
+                linkViewModel.openStoreLink(for: .seeAll)
             }label: {
                 HStack(spacing:2){
                     Text("See all")
@@ -157,7 +158,7 @@ extension LoginView {
             .cornerRadius(4)
             HStack{
                 Button{
-                    
+                    linkViewModel.openStoreLink(for: .mango)
                 }label: {
                     Image("mango")
                         .resizable()
@@ -166,7 +167,7 @@ extension LoginView {
                         .clipped()
                 }
                 Button{
-                    
+                    linkViewModel.openStoreLink(for: .peppermayo)
                 }label: {
                     Image("peppermayo")
                         .resizable()
@@ -175,9 +176,9 @@ extension LoginView {
                         .clipped()
                 }
                 Button{
-                    
+                    linkViewModel.openStoreLink(for: .aritzia)
                 }label: {
-                    Image("Osami")
+                    Image("aritzia")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 100,height: 20)
@@ -185,7 +186,7 @@ extension LoginView {
                 }
             }
             Button{
-                
+                linkViewModel.openStoreLink(for: .seeAll)
             }label: {
                 HStack(spacing:2){
                     Text("See all")
