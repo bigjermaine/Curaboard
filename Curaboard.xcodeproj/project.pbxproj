@@ -14,6 +14,7 @@
 		D064D4812D8D93B600E9D6F9 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D4802D8D93B600E9D6F9 /* VideoPlayerView.swift */; };
 		D064D4982D8DD5A500E9D6F9 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D064D4972D8DD5A500E9D6F9 /* video.mp4 */; };
 		D064D49A2D8DD8E900E9D6F9 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D064D4992D8DD8E900E9D6F9 /* video1.mp4 */; };
+		D064D4C72D8F152D00E9D6F9 /* LinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064D4C62D8F152D00E9D6F9 /* LinkViewModel.swift */; };
 		D0B8FB932D89990B00A234C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B8FB8D2D89990B00A234C3 /* Preview Assets.xcassets */; };
 		D0B8FB942D89990B00A234C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B8FB8F2D89990B00A234C3 /* Assets.xcassets */; };
 		D0B8FB952D89990B00A234C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8FB902D89990B00A234C3 /* ContentView.swift */; };
@@ -70,6 +71,7 @@
 		D064D4802D8D93B600E9D6F9 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		D064D4972D8DD5A500E9D6F9 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		D064D4992D8DD8E900E9D6F9 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		D064D4C62D8F152D00E9D6F9 /* LinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewModel.swift; sourceTree = "<group>"; };
 		D0B8FB602D89990000A234C3 /* Curaboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curaboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B8FB702D89990200A234C3 /* CuraboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuraboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B8FB7A2D89990200A234C3 /* CuraboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuraboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		D064D4C52D8F151500E9D6F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D064D4C62D8F152D00E9D6F9 /* LinkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D0B8FB572D89990000A234C3 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +210,7 @@
 		D0B8FB922D89990B00A234C3 /* Curaboard */ = {
 			isa = PBXGroup;
 			children = (
+				D064D4C52D8F151500E9D6F9 /* ViewModel */,
 				D064D47F2D8D93AF00E9D6F9 /* Extension */,
 				D064D47E2D8D8A1C00E9D6F9 /* Info.plist */,
 				D064D3AD2D8C866800E9D6F9 /* Models */,
@@ -410,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D064D3A62D8B521F00E9D6F9 /* LoginView.swift in Sources */,
+				D064D4C72D8F152D00E9D6F9 /* LinkViewModel.swift in Sources */,
 				D0B8FB952D89990B00A234C3 /* ContentView.swift in Sources */,
 				D064D3AF2D8C866F00E9D6F9 /* RecentlySavedItem.swift in Sources */,
 				D064D3AC2D8BBE4400E9D6F9 /* RecentlySavedItemsView.swift in Sources */,

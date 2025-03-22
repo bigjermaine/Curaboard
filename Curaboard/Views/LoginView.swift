@@ -37,11 +37,16 @@ struct LoginView: View {
                         .foregroundStyle(.color1D1B20)
                         .font(.system(size: 16, weight: .regular))
                         .multilineTextAlignment(.center)
-                    Image("image12")
-                        .resizable()
-                        .frame(maxWidth: 382, maxHeight:255)
-                        .aspectRatio(contentMode: .fill)
-                        .padding()
+                    VStack(spacing:20){
+                        integratedStores
+                        ExtendedStores
+                    }
+                    .padding()
+                    .background(.colorEAEAEA)
+                    .frame(maxWidth: .infinity, maxHeight:255)
+                    .background(.colorEAEAEA)
+                    .cornerRadius(8)
+                    .padding()
                     
                     Spacer()
                 }
@@ -77,4 +82,122 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
+}
+
+extension LoginView {
+    var integratedStores:some View {
+        VStack(spacing: 20){
+            Button{
+                
+            }label: {
+                Text("Integrated stores")
+                    .foregroundStyle(.white)
+                    .font(.system(size: 12, weight: .regular))
+                    .padding(4)
+            }
+            .background(.colorAFAFAF)
+            .cornerRadius(4)
+            
+            HStack{
+                Button{
+                    
+                }label: {
+                    Image("ELEVE")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100,height: 20)
+                        .clipped()
+                }
+                Button{
+                    
+                }label: {
+                    Image("CHIEFTAIN")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100,height: 20)
+                        .clipped()
+                }
+                Button{
+                    
+                }label: {
+                    Image("Osami")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100,height: 20)
+                        .clipped()
+                }
+            }
+            Button{
+                
+            }label: {
+                HStack(spacing:2){
+                    Text("See all")
+                        .foregroundStyle(.colorAFAFAF)
+                        .font(.system(size: 12, weight: .medium))
+                    Image(systemName:"chevron.right")
+                        .resizable()
+                        .frame(width: 5,height: 5)
+                        .foregroundStyle(.colorAFAFAF)
+                        
+                }
+            }
+        }
+    }
+    var ExtendedStores:some View{
+        VStack(spacing: 20){
+            Button{
+                
+            }label: {
+                Text("Extension stores")
+                    .foregroundStyle(.white)
+                    .font(.system(size: 12, weight: .regular))
+                    .padding(4)
+            }
+            .background(.colorAFAFAF)
+            .cornerRadius(4)
+            HStack{
+                Button{
+                    
+                }label: {
+                    Image("mango")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100,height: 20)
+                        .clipped()
+                }
+                Button{
+                    
+                }label: {
+                    Image("peppermayo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100,height: 20)
+                        .clipped()
+                }
+                Button{
+                    
+                }label: {
+                    Image("Osami")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100,height: 20)
+                        .clipped()
+                }
+            }
+            Button{
+                
+            }label: {
+                HStack(spacing:2){
+                    Text("See all")
+                        .foregroundStyle(.colorAFAFAF)
+                        .font(.system(size: 12, weight: .medium))
+                    Image(systemName:"chevron.right")
+                        .resizable()
+                        .frame(width: 5,height: 5)
+                        .foregroundStyle(.colorAFAFAF)
+                        
+                }
+            }
+        }
+    }
 }
