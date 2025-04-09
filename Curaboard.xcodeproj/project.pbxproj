@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -82,6 +82,7 @@
 		D0B8FB972D89991100A234C3 /* CuraboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuraboardTests.swift; sourceTree = "<group>"; };
 		D0B8FB9A2D89991700A234C3 /* CuraboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuraboardUITests.swift; sourceTree = "<group>"; };
 		D0B8FB9B2D89991700A234C3 /* CuraboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuraboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0C9C90D2DA6A25900913A51 /* Curaboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Curaboard.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -210,6 +211,7 @@
 		D0B8FB922D89990B00A234C3 /* Curaboard */ = {
 			isa = PBXGroup;
 			children = (
+				D0C9C90D2DA6A25900913A51 /* Curaboard.entitlements */,
 				D064D4C52D8F151500E9D6F9 /* ViewModel */,
 				D064D47F2D8D93AF00E9D6F9 /* Extension */,
 				D064D47E2D8D8A1C00E9D6F9 /* Info.plist */,
@@ -654,6 +656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Curaboard/Curaboard.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -673,7 +676,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.Curaboard;
+				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.Curaboard1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -687,6 +690,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Curaboard/Curaboard.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -706,7 +710,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.Curaboard;
+				PRODUCT_BUNDLE_IDENTIFIER = XcodeFix.com.Curaboard1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
