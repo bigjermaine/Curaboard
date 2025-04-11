@@ -18,65 +18,17 @@ struct LoginView: View {
     @StateObject private var linkViewModel = LinkViewModel()
     var body: some View {
         VStack {
-            ScrollView {
-                VStack(spacing:15) {
-                    Text("Curaboard is ready!")
-                        .foregroundStyle(.color1D1B20)
-                        .font(.system(size: 24, weight: .bold))
-                        .multilineTextAlignment(.center)
-                    Text("Start saving items effortlessly with\n Curaboard. See how it works below.")
-                        .font(.system(size: 16, weight: .regular))
-                        .foregroundStyle(.color1D1B20)
-                        .multilineTextAlignment(.center)
-                    VideoPlayerView(player: videoPlayer)
-                        .frame(height: 182)
-                        .background(Color.gray.opacity(0.2))
-                        .cornerRadius(12)
-                        .shadow(radius: 5)
-                        .padding()
-                    Text("Here are some of our favorite stores to use curaboard with")
-                        .foregroundStyle(.color1D1B20)
-                        .font(.system(size: 16, weight: .regular))
-                        .multilineTextAlignment(.center)
-                    VStack(spacing:20){
-                        integratedStores
-                        ExtendedStores
-                    }
-                    .padding()
-                    .background(.colorEAEAEA)
-                    .frame(maxWidth: .infinity, maxHeight:255)
-                    .background(.colorEAEAEA)
-                    .cornerRadius(8)
-                    .padding()
-                    
-                    Spacer()
-                }
-                .padding()
-            }
-            VStack{
-                HStack{
-                    Image("Vector")
-                    Text("You’ll be redirected to Curaboard to login/sign up.")
-                        .font(.system(size: 12, weight: .regular))
-                        .foregroundStyle(.colorEC7D2D)
-                   
-                }
-                .padding(4)
-                .background(.colorFFECD6)
-                .cornerRadius(6)
-                Button {
-                    // Handle button action
-                } label: {
-                    Text("Login")
-                        .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(.white)
-                        .padding()
-                        .frame(maxWidth: 304, maxHeight: 44)
-                        .background(Color.black)
-                        .cornerRadius(8)
-                }
-            }
-            .padding(.bottom, 20)
+          
+        }
+        .onAppear{
+            getAll()
+        }
+    }
+    func getAll() {
+        let sharedDefaults = UserDefaults(suiteName: "group.com.jermaine")
+        if let fonts = sharedDefaults?.stringArray(forKey: "detectedFonts") {
+            print("Fonts from Safari Extension:", fonts)
+            // Show in UI, progress view, etc.
         }
     }
 }

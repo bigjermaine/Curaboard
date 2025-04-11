@@ -23,7 +23,7 @@ browser.tabs.query({ active: true, currentWindow: true }).then((tabs) => {
     });
 });
 
-browser.runtime.sendNativeMessage("com.yourcompany.fontfinder", {
+browser.runtime.sendNativeMessage("group.com.jermaine", {
     type: "fonts",
     fonts: list
 });

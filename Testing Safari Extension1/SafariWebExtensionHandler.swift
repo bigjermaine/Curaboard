@@ -28,6 +28,14 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         }
 
         os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@ (profile: %@)", String(describing: message), profile?.uuidString ?? "none")
+        
+        let defaults = UserDefaults(suiteName:"group.com.jermaine")
+        if let messageDict = message as? [String: Any] {
+            if let token = messageDict["getFonts"] as? String {
+                defaults?.set(token, forKey: "userToken")
+                defaults?.synchronize()
+            }
+        }
 
         let response = NSExtensionItem()
         if #available(iOS 15.0, macOS 11.0, *) {
